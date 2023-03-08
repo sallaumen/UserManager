@@ -7,5 +7,7 @@ defmodule UserManagerWeb.Router do
 
   scope "/", UserManagerWeb do
     pipe_through :api
+    get("/:user_id", UsersController, :index)
+    get("/", UsersController, :list)
   end
 end
