@@ -7,7 +7,7 @@ config :user_manager,
 config :user_manager, UserManagerWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [
-    formats: [json: UserManagerWeb.ErrorJSON],
+    formats: [json: UserManagerWeb.Views.ErrorView],
     layout: false
   ],
   pubsub_server: UserManager.PubSub,
